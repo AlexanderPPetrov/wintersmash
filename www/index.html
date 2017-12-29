@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script src="js/vendor/jquery/jquery-1.12.1.min.js"></script>
+        <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+        <script src="js/vendor/underscore-min.js"></script>
+        <script src="js/vendor/animatesprite.js"></script>
+        <script src="js/main.js"></script>
+        <title>Winter Smash</title>
+    </head>
+    <body>
+    <div class="container container-fluid">
+        <div class="row">
+
+            <div class="points " style="height:67px">
+                <span class="score pull-left">0</span>
+                <button class="btn pull-right btn-primary" id="new-game"><span class="glyphicon glyphicon-repeat" aria-hidden="true" style="margin-right:7px;"></span> New Game</button>
+                <i class="fa fa-volume-up pull-right sound-icon" style="margin-right:15px" aria-hidden="true"></i>
+
+            </div>
+            <div class="background-image"></div>
+            <div class="block-container">
+
+                <div id="image-container">
+                    <div class="text-center inner-container">
+                        <img class="start animation" src="img/start.png">
+                        <img class="smashing animation" src="img/smashing.png">
+                        <img class="splendid animation" src="img/splendid.png">
+                        <img class="indubitably animation" src="img/indubitably.png">
+                        <img class="marvelous animation" src="img/marvelous.png">
+                        <img class="unbelievable animation" src="img/unbelievable.png">
+                    </div>
+
+                </div>
+                <div id="gem-container">
+
+                </div>
+
+            </div>
+            <!--<div class="stats-container">-->
+
+            <!--<div class="ui-container stats">-->
+            <!--&lt;!&ndash;<span class="stats-label">Combo Strikes </span>&ndash;&gt;-->
+            <!--<div class="combos">-->
+            <!--<p>-->
+            <!--<span class="smashing-text">Smashing: </span>-->
+            <!--<span class="smashing-text smashing pull-right">0</span>-->
+            <!--</p>-->
+            <!--<p>-->
+            <!--<span class="splendid-text">Splendid: </span>-->
+            <!--<span class="splendid-text splendid pull-right">0</span>-->
+            <!--</p>-->
+            <!--<p>-->
+            <!--<span class="indubitably-text">Indubitably: </span>-->
+            <!--<span class="indubitably-text indubitably pull-right">0</span>-->
+            <!--</p>-->
+            <!--<p>-->
+            <!--<span class="marvelous-text">Marvelous: </span>-->
+            <!--<span class="marvelous-text marvelous pull-right">0</span>-->
+            <!--</p>-->
+            <!--<p>-->
+            <!--<span class="unbelievable-text">Unbelievable: </span>-->
+            <!--<span class="unbelievable-text unbelievable pull-right">0</span>-->
+            <!--</p>-->
+            <!--</div>-->
+
+            <!--<div class="beer-container">-->
+            <!--<div class="beers-collected">-->
+            <!--<span class="stats-label">Beers Collected: </span>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6">-->
+            <!--<img class="pull-left" src="img/gem_5.png"/>-->
+            <!--<img class="pull-left"  style="margin-top:19px;" src="img/beer_1_x.png"/>-->
+            <!--<span class="pull-right beer-score beer1">0</span>-->
+            <!--</div>-->
+            <!--<div class="col-sm-6" style="padding-left:0;">-->
+            <!--<img src="img/gem_6.png"/>-->
+            <!--<img src="img/beer_2_x.png"/>-->
+            <!--<span class="pull-right beer-score beer2">0</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+
+    </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
